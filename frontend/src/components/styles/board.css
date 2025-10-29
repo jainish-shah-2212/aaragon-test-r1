@@ -39,13 +39,21 @@
     border-bottom: 0.1px solid grey;
 }
 
-.add-new-task{
+.board-header-btn{
     padding: 0.5rem 1rem;
-    background-color: #6D6AFE;
     color: white;
     border: none;
     border-radius: 20px;
     cursor: pointer;
+}
+
+.add-new-task{
+    background-color: #6D6AFE;
+}
+
+.delete-board{
+    margin-left: 0.5rem;
+    background-color: crimson;
 }
 
 .no-board-text{

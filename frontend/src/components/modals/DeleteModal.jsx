@@ -13,10 +13,9 @@ const DeleteModal = ({
       onClose={onClose}
       handleSubmit={onConfirm}
       data={{ title: "Confirm Deletion" }}
-      disabled={false} // always allow confirm
+      disabled={false}
     >
       <div className="delete-modal">
-        <h3 className="delete-title">Are you sure?</h3>
         <p className="delete-text">
           Are you sure you want to delete <strong>{itemName}</strong>? 
           <br />

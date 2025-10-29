@@ -26,12 +26,21 @@ export const BoardProvider = ({ children }) => {
        setBoards(prevBoards => [...prevBoards,resp]);
     }
 
+    const deleteBoard = async () => {
+        const boardId = selectedBoard.id;
+        await boardService.deleteBoard(boardId);
+        const newBoards = boards.filter(ele => ele.id !== boardId);
+       setBoards(newBoards);
+       setSelectedBoard(newBoards[0]);
+
+    }
+
     useEffect(() => {
         fetchAllBoards();
     }, []);
 
     return (
-        <BoardContext.Provider value={{selectedBoard, boards, setSelectedBoard , createBoard}}>
+        <BoardContext.Provider value={{selectedBoard, boards, setSelectedBoard , createBoard, deleteBoard}}>
             {children}
         </BoardContext.Provider>
     );
