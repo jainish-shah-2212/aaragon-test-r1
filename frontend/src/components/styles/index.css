@@ -1,0 +1,86 @@
+.sidebar{
+    background-color: #1A1B26;
+    border-right: 0.1px solid grey;
+
+}
+.sidebar-content{
+    padding: 1rem;
+}
+
+.kanban-logo {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+}
+
+.logo-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 3px;
+}
+
+.logo-icon span {
+  display: block;
+  width: 5px;
+  height: 1.25rem;
+  background-color: #6d6afe; /* Accent color (purple-blue) */
+  border-radius: 1px;
+}
+
+
+.sidebar-content .board-title{
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #A1A1B5;
+    font-size: 0.6rem;
+    letter-spacing: 1.5px;
+}
+
+/* body{
+    background-color: #EAEAEA;
+} */
+
+.main-container{
+    display: flex;
+    align-items: center;
+}
+
+
+
+.board-list{
+    display: flex;
+    flex-direction: column;
+}   
+
+
+.board-item{
+    border: none;
+    color: white;
+    text-align: left;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: flex-start;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+/* .board-item:hover{
+    background-color: grey;
+} */
+
+.selected{
+    background-color: #6D6AFE;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+.create-new-board{
+    color: #6d6afe;
+}
